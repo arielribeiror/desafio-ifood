@@ -1,0 +1,28 @@
+{
+  "name": "desafio-ifood-fase-07",
+  "version": "1.0.0",
+  "description": "Desafio iFood FIAP Fase 07",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test",
+    "start": "sass --watch src/global.scss build/assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielribeiror/desafio-ifood-fase-07.git"
+  },
+  "keywords": [
+    "desafio",
+    "ifood",
+    "FIAP"
+  ],
+  "author": "arielribeiror",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielribeiror/desafio-ifood-fase-07/issues"
+  },
+  "homepage": "https://github.com/arielribeiror/desafio-ifood-fase-07#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
