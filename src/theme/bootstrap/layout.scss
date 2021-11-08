@@ -1,0 +1,35 @@
+.container.d-grid {
+  grid-template-rows: [header] 87px [main] auto [footer] 138px;
+  height: 100vh;
+  grid-row-gap: 0.75rem;
+}
+
+header {
+  grid-row: header;
+}
+
+.toolbar {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  img {
+    height: 45px;
+  }
+}
+
+main {
+  grid-row: main;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+footer {
+  grid-row: footer;
+}
+
+header,
+main,
+footer {
+  position: relative;
+}

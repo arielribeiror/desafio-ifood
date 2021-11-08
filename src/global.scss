@@ -3,3 +3,12 @@
 
 /* Bootstrap */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Bootstrap Theming */
+@import "../src/theme/bootstrap/alert.scss";
+@import "../src/theme/bootstrap/buttons.scss";
+@import "../src/theme/bootstrap/grid.scss";
+@import "../src/theme/bootstrap/images.scss";
+@import "../src/theme/bootstrap/layout.scss";
+@import "../src/theme/bootstrap/modal.scss";
+@import "../src/theme/bootstrap/utilities.scss";
