@@ -9,83 +9,6 @@
     <link rel="stylesheet" href="./build/assets/css/main.css" />
   </head>
   <body>
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" data-bs-dismiss="modal">
-            <button type="button" class="btn-close" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>Entrar</h1>
-            <div class="d-grid w-100 my-5">
-              <a class="btn btn-primary btn-lg mb-3" href="/login/">
-                Sou consumidor
-              </a>
-              <a
-                class="btn btn-outline-primary btn-lg mb-3"
-                href="/partner/login/"
-              >
-                Sou fornecedor
-              </a>
-              <a
-                class="btn btn-outline-primary btn-lg mb-3"
-                href="/partner/login/"
-              >
-                Sou consumidor e fornecedor
-              </a>
-              <a class="btn btn-outline-primary btn-lg disabled">
-                Sou entregador
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade"
-      id="signupModal"
-      tabindex="-1"
-      aria-labelledby="signupModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" data-bs-dismiss="modal">
-            <button type="button" class="btn-close" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>Criar conta</h1>
-            <div class="d-grid w-100 my-5">
-              <a class="btn btn-primary btn-lg mb-3" href="/login/">
-                Sou consumidor
-              </a>
-              <a
-                class="btn btn-outline-primary btn-lg mb-3"
-                href="/partner/login/"
-              >
-                Sou fornecedor
-              </a>
-              <a
-                class="btn btn-outline-primary btn-lg mb-3"
-                href="/partner/login/"
-              >
-                Sou consumidor e fornecedor
-              </a>
-              <a class="btn btn-outline-primary btn-lg disabled">
-                Sou entregador
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container d-grid">
       <header>
         <div class="toolbar justify-content-center">
@@ -183,27 +106,11 @@
       <footer>
         <div class="toolbar">
           <div class="d-grid w-100">
-            <button
-              type="button"
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-            >
-              Entrar
-            </button>
-            <button
-              type="button"
-              class="btn btn-link btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#signupModal"
-            >
-              Criar conta
-            </button>
+            <a class="btn btn-primary btn-lg" href="/login/"> Entrar </a>
+            <a class="btn btn-link btn-lg" href="/cadastrar/"> Criar conta </a>
           </div>
         </div>
       </footer>
     </div>
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

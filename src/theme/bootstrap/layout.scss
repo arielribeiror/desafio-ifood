@@ -5,7 +5,7 @@
 }
 
 .container.d-grid.splited {
-  grid-template-rows: [header] 280px [main] auto [footer] 138px;
+  grid-template-rows: [header] 380px [main] auto [footer] 138px;
   height: 100vh;
   grid-row-gap: 0.75rem;
 }

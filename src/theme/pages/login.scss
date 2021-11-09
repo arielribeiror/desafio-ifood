@@ -1,0 +1,21 @@
+.auth-illustration {
+  position: relative;
+  img {
+    margin-top: -15px;
+  }
+}
+
+.auth-illustration:before {
+  content: "";
+  min-width: 130vh;
+  min-height: 135vh;
+  width: 130vw;
+  height: 130vw;
+  z-index: -1;
+  position: absolute;
+  background-color: #fdedee;
+  border-radius: 0 100% 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+}

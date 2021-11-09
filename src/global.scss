@@ -14,4 +14,5 @@
 @import "../src/theme/bootstrap/utilities.scss";
 
 /* iFood Theming */
-@import "../src/theme/header.scss";
+@import "../src/theme/layout/header.scss";
+@import "../src/theme/pages/login.scss";

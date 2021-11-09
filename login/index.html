@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio iFood</title>
 
-    <link rel="stylesheet" href="../../build/assets/css/main.css" />
+    <link rel="stylesheet" href="../build/assets/css/main.css" />
   </head>
   <body>
-    <div class="container d-grid splited">
-      <header class="login-header">
+    <div class="container d-grid splited position-relative overflow-hidden">
+      <header>
         <div class="toolbar justify-content-center">
-          <img src="../../src/assets/images/ifood-logo.svg" alt="iFood Logo" />
+          <img src="../src/assets/images/ifood-logo.svg" alt="iFood Logo" />
+        </div>
+        <div class="auth-illustration">
+          <div class="d-flex justify-content-center">
+            <img
+              src="../src/assets/images/ifood-illustration.svg"
+              alt="iFood Illustration"
+              style="max-height: 250px"
+              class="mb-4"
+            />
+          </div>
         </div>
       </header>
 
       <main>
         <section>
-          <div
-            class="d-flex align-items-center flex-column mt-3 mb-5 text-center"
-          >
-            <h1>Portal do Parceiro</h1>
-            <h5>Gerencie sua loja de forma fácil e rápida.</h5>
-          </div>
           <form action="dashboard/index.html" method="post">
             <div class="mb-4">
               <label for="loginUser" class="form-label">E-mail</label>
               <input
                 type="text"
                 id="loginUser"
+                name="loginUser"
                 class="form-control form-control-lg"
                 placeholder="Digite seu e-mail"
               />
             </div>
-            <div class="mb-4">
+            <div>
               <label for="loginPassword" class="form-label"> Senha </label>
               <input
                 type="password"
                 id="loginPassword"
+                name="loginPassword"
                 class="form-control form-control-lg"
                 placeholder="Digite sua senha"
               />
@@ -50,27 +56,23 @@
       <footer>
         <div class="toolbar">
           <div class="d-grid w-100">
-            <button
-              type="button"
+            <a
               class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
+              href="/home/"
             >
               Entrar
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
               class="btn btn-link btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#signupModal"
+              href="/cadastrar/"
             >
               Criar conta
-            </button>
+            </a>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
