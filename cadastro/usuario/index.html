@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar - Desafio iFood</title>
+
+    <link rel="stylesheet" href="../../build/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container d-grid small-footer">
+      <header>
+        <div class="toolbar justify-content-center">
+          <img src="../../src/assets/images/ifood-logo.svg" alt="iFood Logo" />
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <a
+            href="../../"
+            class="btn btn-link d-flex align-items-center p-0 mb-4"
+          >
+            <i class="bi bi-chevron-left"></i>
+            Voltar
+          </a>
+          <h1>Dados básicos</h1>
+          <form action="dashboard/index.html" method="post" class="mt-4">
+            <div class="mb-4">
+              <label for="fullName" class="form-label"> Nome completo </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="form-control form-control-lg"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="loginUser" class="form-label"> E-mail </label>
+              <input
+                type="email"
+                id="loginUser"
+                name="loginUser"
+                class="form-control form-control-lg"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="cellPhone" class="form-label">
+                Celular (com DDD)
+              </label>
+              <input
+                type="text"
+                id="cellPhone"
+                name="cellPhone"
+                class="form-control form-control-lg"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="userType" class="form-label"> Perfil </label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="userType"
+                  id="userTypeConsumer"
+                />
+                <label class="form-check-label" for="userTypeConsumer">
+                  Consumidor
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="userType"
+                  id="userTypeProvider"
+                  checked
+                />
+                <label class="form-check-label" for="userTypeProvider">
+                  Fornecedor
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="userType"
+                  id="userTypeConsumerAndProvider"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="userTypeConsumerAndProvider"
+                >
+                  Consumidor e fornecedor
+                </label>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="toolbar">
+          <div class="d-grid w-100">
+            <a
+              class="btn btn-primary btn-lg"
+              href="/cadastro/usuario/endereco/"
+            >
+              Avançar
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

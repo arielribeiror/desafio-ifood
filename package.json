@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/arielribeiror/desafio-ifood-fase-07#readme",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.0"
   }
 }

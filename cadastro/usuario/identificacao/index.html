@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar - Desafio iFood</title>
+
+    <link rel="stylesheet" href="../../../build/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container d-grid small-footer">
+      <header>
+        <div class="toolbar justify-content-center">
+          <img
+            src="../../../src/assets/images/ifood-logo.svg"
+            alt="iFood Logo"
+          />
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <a
+            href="../endereco/"
+            class="btn btn-link d-flex align-items-center p-0 mb-4"
+          >
+            <i class="bi bi-chevron-left"></i>
+            Voltar
+          </a>
+          <h1>Identificação</h1>
+          <form action="dashboard/index.html" method="post" class="mt-4">
+            <div class="mb-4">
+              <label for="person" class="form-label"> Sou </label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="person"
+                  id="personPhysical"
+                  checked
+                />
+                <label class="form-check-label" for="personPhysical">
+                  Pessoa Física
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="person"
+                  id="personLegal"
+                  checked
+                />
+                <label class="form-check-label" for="personLegal">
+                  Pessoa Jurídica
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="cnpj" class="form-label"> CNPJ </label>
+              <input
+                type="text"
+                id="cnpj"
+                name="cnpj"
+                class="form-control form-control-lg"
+                placeholder="00.000.000/0000-00"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="categoryDataList" class="form-label">
+                Categorias
+              </label>
+              <input
+                class="form-control form-control-lg"
+                list="categoryOptions"
+                id="categoryDataList"
+                name="categoryDataList"
+                placeholder="Digite para pesquisar"
+              />
+              <datalist id="categoryOptions">
+                <option value="Adega"></option>
+                <option value="Frigorífico"></option>
+                <option value="Hortifruti"></option>
+                <option value="Massas"></option>
+                <option value="Mercado"></option>
+                <option value="Mercearia"></option>
+                <option value="Padaria"></option>
+              </datalist>
+            </div>
+            <div class="mb-4">
+              <div
+                class="
+                  form-check form-switch
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  p-0
+                "
+              >
+                <label class="form-check-label" for="serveCompanies">
+                  Atende empresas?
+                </label>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="serveCompanies"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="providerDataList" class="form-label">
+                Tipo de Fornecedor
+              </label>
+              <input
+                class="form-control form-control-lg"
+                list="providerOptions"
+                id="providerDataList"
+                name="providerDataList"
+                placeholder="Digite para pesquisar"
+              />
+              <datalist id="providerOptions">
+                <option value="Adega"></option>
+                <option value="Frigorífico"></option>
+                <option value="Hortifruti"></option>
+                <option value="Massas"></option>
+                <option value="Mercado"></option>
+                <option value="Mercearia"></option>
+                <option value="Padaria"></option>
+              </datalist>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="toolbar">
+          <div class="d-grid w-100">
+            <a class="btn btn-primary btn-lg" href="/cadastro/usuario/sucesso/">
+              Avançar
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

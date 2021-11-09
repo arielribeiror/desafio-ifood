@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar - Desafio iFood</title>
+
+    <link rel="stylesheet" href="../../../build/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container d-grid small-footer">
+      <header>
+        <div class="toolbar justify-content-center">
+          <img
+            src="../../../src/assets/images/ifood-logo.svg"
+            alt="iFood Logo"
+          />
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <a href="../" class="btn btn-link d-flex align-items-center p-0 mb-4">
+            <i class="bi bi-chevron-left"></i>
+            Voltar
+          </a>
+          <h1>Endereço</h1>
+          <form action="dashboard/index.html" method="post" class="mt-4">
+            <div class="mb-4">
+              <label for="zipCode" class="form-label"> CEP </label>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                class="form-control form-control-lg"
+                placeholder="00000-000"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="street" class="form-label"> Logradouro </label>
+              <input
+                type="email"
+                id="street"
+                name="street"
+                class="form-control form-control-lg"
+                placeholder="Rua, Av., etc."
+              />
+            </div>
+            <div class="mb-4">
+              <label for="number" class="form-label"> Número </label>
+              <input
+                type="text"
+                id="number"
+                name="number"
+                class="form-control form-control-lg"
+                placeholder="000"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="complement" class="form-label"> Complemento </label>
+              <input
+                type="text"
+                id="complement"
+                name="complement"
+                class="form-control form-control-lg"
+                placeholder="Loja, Andar, etc."
+              />
+            </div>
+            <div class="mb-4">
+              <label for="neighborhood" class="form-label"> Bairro </label>
+              <input
+                type="text"
+                id="neighborhood"
+                name="neighborhood"
+                class="form-control form-control-lg"
+                placeholder="Digite seu bairro"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="city" class="form-label"> Cidade </label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                class="form-control form-control-lg"
+                placeholder="Digite sua cidade"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="city" class="form-label"> Estado </label>
+              <select class="form-select form-select-lg">
+                <option selected>Selecione seu Estado</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="toolbar">
+          <div class="d-grid w-100">
+            <a
+              class="btn btn-primary btn-lg"
+              href="/cadastro/usuario/identificacao/"
+            >
+              Avançar
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
